@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/stuff
+###
+POST http://localhost:3000/api/sauces/
+Content-Type: application/json
+
+{
+    "userId": "60d206b8a0272950041806de" ,
+  "name": "Mike's Chili sauce",
+  "manufacturer": "Mike's",
+  "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71YLKu0fNYL._SX342_.jpg",
+  "description": "A very spicy sauce",
+  "mainPepper": "Chili peppers",
+  "heat": "5"
+}
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "a@a.com",
+    "password" : "azerty"
+}
+
+###
+GET http://localhost:3000/api/sauces
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjQ0Njc0NDAsImV4cCI6MTYyNDU1Mzg0MH0.4JDDGdUEk9fIW6ySGS9eaxXpm_sGhproWU6oH9Zl3q8
+###
+PUT http://localhost:3000/api/stuff/60d0c23e8f45544a68596e77
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQwYmE4ZmRmM2UzYzRmYjBkMTY1YmMiLCJpYXQiOjE2MjQyOTM4ODYsImV4cCI6MTYyNDM4MDI4Nn0.8DF3EVKdhNtBapmH_z2i75zwcJgWkjRXmZ7a6kDZf9Y 
+Content-Type: application/json
+
+{   
+    "userId": "60d0ba8fdf3e3c4fb0d165bc",
+    "title" : "Tongs bas marché"
+}
