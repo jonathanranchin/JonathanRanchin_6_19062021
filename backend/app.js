@@ -6,6 +6,7 @@ const saucesRoutes = require("./routes/sauce");
 const path = require("path");
 let cors = require("cors");
 const app = express();
+var helmet = require('helmet');
 
 mongoose
   .connect("mongodb+srv://admin:PASSWORD@p6cluster.zuvde.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
@@ -19,6 +20,8 @@ app.use((req, res, next) => {
   next();
 });
 app.use(cors());
+app.use(helmet());
+app.disable('x-powered-by');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/images", express.static(path.join(__dirname, "images")));

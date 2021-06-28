@@ -1,4 +1,14 @@
-GET http://localhost:3000/api/stuff
+GET http://localhost:3000/api/sauces
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5ZjlhMmZjYTg2MDJmNjBkYmE4NGQiLCJpYXQiOjE2MjQ4OTc5OTgsImV4cCI6MTYyNDk4NDM5OH0.vizHRwzegiPjahkyi3l6A1l656fVoyp77fFhRExgCuk
+
+###
+PUT http://localhost:3000/api/sauces/60d4e74243b93e261cb9e998
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5ZjlhMmZjYTg2MDJmNjBkYmE4NGQiLCJpYXQiOjE2MjQ4OTc5OTgsImV4cCI6MTYyNDk4NDM5OH0.vizHRwzegiPjahkyi3l6A1l656fVoyp77fFhRExgCuk
+Content-Type: application/json
+
+{
+    "name": "Not a good sauce"
+}
 ###
 POST http://localhost:3000/api/sauces/
 Content-Type: application/json
@@ -17,7 +27,17 @@ POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "email" : "a@a.com",
+    "email" : "b@b.com",
+    "password" : "azerty"
+}
+
+###
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email" : "b@b.com",
     "password" : "azerty"
 }
 
