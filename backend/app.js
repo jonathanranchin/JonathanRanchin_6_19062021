@@ -9,7 +9,7 @@ const app = express();
 var helmet = require('helmet');
 
 mongoose
-  .connect("mongodb+srv://admin:PASSWORD@p6cluster.zuvde.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb+srv://"+ process.env.DB_HOST +":"+ process.env.DB_USER + "@p6cluster.zuvde.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch(() => console.log("Connexion à MongoDB échouée !"));
 
