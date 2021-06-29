@@ -1,33 +1,20 @@
 GET http://localhost:3000/api/sauces
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5ZjlhMmZjYTg2MDJmNjBkYmE4NGQiLCJpYXQiOjE2MjQ4OTc5OTgsImV4cCI6MTYyNDk4NDM5OH0.vizHRwzegiPjahkyi3l6A1l656fVoyp77fFhRExgCuk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjQ5NzEyNjIsImV4cCI6MTYyNTA1NzY2Mn0.ADME6DkVhYcS1bN4eGKbN74SYzuh01BYNAp-IAiq7DA
 
 ###
 PUT http://localhost:3000/api/sauces/60d4e74243b93e261cb9e998
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQ5ZjlhMmZjYTg2MDJmNjBkYmE4NGQiLCJpYXQiOjE2MjQ4OTc5OTgsImV4cCI6MTYyNDk4NDM5OH0.vizHRwzegiPjahkyi3l6A1l656fVoyp77fFhRExgCuk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjQ5NzEyNjIsImV4cCI6MTYyNTA1NzY2Mn0.ADME6DkVhYcS1bN4eGKbN74SYzuh01BYNAp-IAiq7DA
 Content-Type: application/json
 
 {
-    "name": "Not a good sauce"
-}
-###
-POST http://localhost:3000/api/sauces/
-Content-Type: application/json
-
-{
-    "userId": "60d206b8a0272950041806de" ,
-  "name": "Mike's Chili sauce",
-  "manufacturer": "Mike's",
-  "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71YLKu0fNYL._SX342_.jpg",
-  "description": "A very spicy sauce",
-  "mainPepper": "Chili peppers",
-  "heat": "5"
+    "name": "Mike's very Own"
 }
 ###
 POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "email" : "b@b.com",
+    "email" : "a@a.com",
     "password" : "azerty"
 }
 
@@ -37,7 +24,7 @@ POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "email" : "b@b.com",
+    "email" : "c@c.com",
     "password" : "azerty"
 }
 
@@ -52,4 +39,17 @@ Content-Type: application/json
 {   
     "userId": "60d0ba8fdf3e3c4fb0d165bc",
     "title" : "Tongs bas marché"
+}
+###
+POST http://localhost:3000/api/sauces/
+Content-Type: application/json
+
+{
+    "userId": "60d206b8a0272950041806de" ,
+  "name": "Mike's Chili sauce",
+  "manufacturer": "Mike's",
+  "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71YLKu0fNYL._SX342_.jpg",
+  "description": "A very spicy sauce",
+  "mainPepper": "Chili peppers",
+  "heat": "5"
 }
