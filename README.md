@@ -13,4 +13,4 @@ DB_HOST=admin
 DB_USER=PASSWORD
 DB_PASS=MRu66qG+PjUPJu(e3Z{?
 Host et user sont nécessaire pour l'usage de la base de donnée,
-Pass sert comme clefs de criptage.
+Pass sert comme clef de criptage.
