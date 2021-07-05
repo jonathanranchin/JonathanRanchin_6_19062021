@@ -1,13 +1,13 @@
 GET http://localhost:3000/api/sauces
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjQ5NzEyNjIsImV4cCI6MTYyNTA1NzY2Mn0.ADME6DkVhYcS1bN4eGKbN74SYzuh01BYNAp-IAiq7DA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjU0ODY1NjUsImV4cCI6MTYyNTU3Mjk2NX0.S8fScd79PPj_rDAPmXFVFwwOG6cobis1FMSalwNY4o0
 
 ###
-PUT http://localhost:3000/api/sauces/60d4e74243b93e261cb9e998
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjQ5NzEyNjIsImV4cCI6MTYyNTA1NzY2Mn0.ADME6DkVhYcS1bN4eGKbN74SYzuh01BYNAp-IAiq7DA
+PUT http://localhost:3000/api/sauces/60e2f2ea7034d135d46f2c10
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjU0ODY1NjUsImV4cCI6MTYyNTU3Mjk2NX0.S8fScd79PPj_rDAPmXFVFwwOG6cobis1FMSalwNY4o0
 Content-Type: application/json
 
 {
-    "name": "Mike's very Own"
+    "name": "A new Advark hotsauce"
 }
 ###
 POST http://localhost:3000/api/auth/login
