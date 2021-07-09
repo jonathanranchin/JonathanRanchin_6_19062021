@@ -30,7 +30,6 @@ app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/auth", rateLimit({
   windowMs: 12 * 60 * 60 * 1000, // 12 hour duration in milliseconds
   max: 10,
-  message: "You exceeded 100 requests in 12 hour limit!",
   headers: true,
 }), userRoutes);
 app.use("/api/sauces", saucesRoutes);

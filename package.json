@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "crypto-js": "^4.0.0",
     "express-rate-limit": "^5.3.0",
+    "maskdata": "^1.1.6",
     "moment": "^2.29.1",
     "password-validator": "^5.1.1",
     "redis": "^3.1.2"
