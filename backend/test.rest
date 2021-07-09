@@ -1,13 +1,13 @@
 GET http://localhost:3000/api/sauces
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRiMDgwMzg4NzQzNzQ3YjQzNTk4NWEiLCJpYXQiOjE2MjU1MDE3MjAsImV4cCI6MTYyNTU4ODEyMH0.u2QAcAoJSdZY6cEj7aM18RNqq5KLeI_eVdHbpT5tO-w
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjU4MjI0MzgsImV4cCI6MTYyNTkwODgzOH0.u6EXg5yKe5pPAselx2e7QxkpHt0E4qa4KlBFMR-7wyU
 
 ###
-PUT http://localhost:3000/api/sauces/60e2f2ea7034d135d46f2c10
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGRiMDgwMzg4NzQzNzQ3YjQzNTk4NWEiLCJpYXQiOjE2MjU1MDE3MjAsImV4cCI6MTYyNTU4ODEyMH0.u2QAcAoJSdZY6cEj7aM18RNqq5KLeI_eVdHbpT5tO-w
+PUT http://localhost:3000/api/sauces/60db3d1a37145343647c829d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGQyMDZiOGEwMjcyOTUwMDQxODA2ZGUiLCJpYXQiOjE2MjU4MjI0MzgsImV4cCI6MTYyNTkwODgzOH0.u6EXg5yKe5pPAselx2e7QxkpHt0E4qa4KlBFMR-7wyU
 Content-Type: application/json
 
 {
-    "name": "A Advark hotsauce"
+    "name": "A  great Advark hotsauce"
 }
 ###
 POST http://localhost:3000/api/auth/login
