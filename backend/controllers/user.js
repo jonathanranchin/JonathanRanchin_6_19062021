@@ -4,7 +4,20 @@ const jwt = require("jsonwebtoken");
 
 const User = require("../models/user");
 
+var passwordValidator = require('password-validator');
+
+var schema = new passwordValidator();
+schema
+.is().min(8)                                    
+.is().max(100) 
+.has().symbols()                                 
+.has().uppercase()                              
+.has().lowercase()                              
+.has().digits(1);
+
 exports.signup = (req, res, next) => {
+  try {
+  if (schema.validate(req.body.password)===true) {
   bcrypt
     .hash(req.body.password, 10)
     .then((hash) => {
@@ -18,6 +31,13 @@ exports.signup = (req, res, next) => {
         .catch((error) => res.status(400).json({ error }));
     })
     .catch((error) => res.status(500).json({ error }));
+  } else {
+    throw error;
+  }
+  }
+  catch(error) {
+    res.status(406).json({ error })
+  }
 };
 
 exports.login = (req, res, next) => {
